@@ -8,10 +8,16 @@ select{
     min-height:32px;
     height:100%;
 }
+
 @media(max-width:40rem){
-.sm\:w-\[calc\(33\.333\%-11px\)\] {
+#modal-panel,#cert-track>div{
     width: 100%;
 }
+
+#modal-panel .sm\:text-left{
+    text-align:left;
+}
+
 }
 
 @media (min-width: 768px){

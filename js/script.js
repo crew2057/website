@@ -179,8 +179,8 @@
             if (currentCertIndex < 0) currentCertIndex = maxIndex;
             if (currentCertIndex > maxIndex) currentCertIndex = 0;
             
-            const offset = window.innerWidth >= 640 ? currentCertIndex * (101 / visibleItems) : currentCertIndex * (103/visibleItems);
-            certTrack.style.transform = `translateX(-${offset}%)`;
+            const offset = window.innerWidth >= 640 ? currentCertIndex * (101 / visibleItems): currentCertIndex * (105.5 / visibleItems);
+            certTrack.style.transform =`translateX(-${offset}%)`;
         }
 
         // Optimized List Manager Component

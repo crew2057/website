@@ -24,42 +24,50 @@
         ];
 
         const ctiData = [
-            { id: 1, title: 'CISA Cyber Activity & Advisories', source: 'cisa.gov', tags: ['Government', 'Advisory'], date: '2026-01-01', summary: 'Official alerts and advisories concerning current cyber threats, vulnerabilities, and defensive mitigations.', link: 'https://www.cisa.gov/news-events/cybersecurity-advisories' },
-            { id: 2, title: 'Krebs on Security', source: 'krebsonsecurity.com', tags: ['Investigative', 'Blog'], date: '2026-01-01', summary: 'In-depth investigative journalism focused on cybercrime, data breaches, and corporate security investigations.', link: 'https://krebsonsecurity.com/' },
-            { id: 3, title: 'The Hacker News', source: 'thehackernews.com', tags: ['News', 'Analysis'], date: '2026-01-01', summary: 'Leading trusted source for latest cybersecurity news, vulnerability disclosures, and exploit analysis.', link: 'https://thehackernews.com/' },
-            { id: 4, title: 'Dark Reading', source: 'darkreading.com', tags: ['Enterprise', 'SecOps'], date: '2026-01-01', summary: 'Comprehensive security news and technical insights focusing on threat intelligence, analytics, and risk management.', link: 'https://www.darkreading.com/' },
-            { id: 5, title: 'Schneier on Security', source: 'schneier.com', tags: ['Opinion', 'Cryptography'], date: '2026-01-01', summary: 'Commentary on security trends, cryptography, privacy policies, and structural risk design by Bruce Schneier.', link: 'https://www.schneier.com/' },
-            { id: 6, title: 'BleepingComputer', source: 'bleepingcomputer.com', tags: ['News', 'Malware'], date: '2026-01-02', summary: 'Reliable technical news covering malware analysis, ransomware trends, and software security patches.', link: 'https://www.bleepingcomputer.com/' },
-            { id: 7, title: 'Threatpost Archive', source: 'threatpost.com', tags: ['Vulnerabilities', 'Research'], date: '2026-01-03', summary: 'Archived repository of high-impact security research, exploit disclosures, and industry analysis.', link: 'https://threatpost.com/' },
-            { id: 8, title: 'SecurityWeek', source: 'securityweek.com', tags: ['Enterprise', 'News'], date: '2026-01-04', summary: 'Industry intelligence, enterprise risk assessments, and cyber defense strategy breakdowns.', link: 'https://www.securityweek.com/' },
-            { id: 9, title: 'SANS Internet Storm Center', source: 'sans.org', tags: ['Threat Intelligence', 'Advisory'], date: '2026-01-05', summary: 'Daily analysis of malicious Internet traffic, vulnerabilities, and emerging threat vectors.', link: 'https://isc.sans.edu/' },
-            { id: 10, title: 'The Record by Recorded Future', source: 'therecord.media', tags: ['Investigative', 'Intelligence'], date: '2026-01-06', summary: 'Award-winning cybersecurity journalism uncovering major global cyber incidents and geopolitical threats.', link: 'https://therecord.media/' }
+            { id: 1, title: 'CISA Cyber Activity & Advisories', tags: ['Advisory','Government'], summary: 'Official alerts and advisories concerning current cyber threats, vulnerabilities, and defensive mitigations.', link: 'https://www.cisa.gov/news-events/cybersecurity-advisories' },
+            { id: 2, title: 'Krebs on Security', tags: ['News'], summary: 'In-depth investigative journalism focused on cybercrime, data breaches, and corporate security investigations.', link: 'https://krebsonsecurity.com/' },
+            { id: 3, title: 'The Hacker News', tags: ['Insights','News'], summary: 'Leading trusted source for latest cybersecurity news, vulnerability disclosures, and exploit analysis.', link: 'https://thehackernews.com/' },
+            { id: 4, title: 'Dark Reading', tags: ['Insights','News'], summary: 'Comprehensive security news and technical insights focusing on threat intelligence, analytics, and risk management.', link: 'https://www.darkreading.com/' },
+            { id: 5, title: 'BleepingComputer', tags: ['Insights','News'], summary: 'Reliable technical news covering malware analysis, ransomware trends, and software security patches.', link: 'https://www.bleepingcomputer.com/' },
+            { id: 6, title: 'SecurityWeek',  tags: ['Insights','News'], summary: 'Industry intelligence, enterprise risk assessments, and cyber defense strategy breakdowns.', link: 'https://www.securityweek.com/' },
+            { id: 7, title: 'SANS Internet Storm Center', tags: ['Advisory','Insights','Podcasts'], summary: 'Daily analysis of malicious Internet traffic, vulnerabilities, and emerging threat vectors.', link: 'https://isc.sans.edu/' },
+            { id: 8, title: 'The Record', tags: ['Insights','News','Podcasts'], summary: 'Award-winning cybersecurity journalism uncovering major global cyber incidents and geopolitical threats.', link: 'https://therecord.media/' },
+            { id: 9, title: 'CSO', tags: ['Insights','News'], summary: 'Cybersecurity news, expert insights, and analysis to help security leaders navigate evolving threats.', link: 'https://www.csoonline.com/' },
+            { id: 10, title: 'Ultimate IT Security',  tags: ['Advisory'], summary: 'Get informed about updates on Windows CVEs', link: 'https://www.ultimatewindowssecurity.com/' },
+            { id: 11, title: 'RansomwareLive', tags: ['Ransomware'], summary: 'Real-time ransomware intelligence tracking groups, victims, and emerging threats worldwide.', link: 'https://www.ransomware.live/' },
+            { id: 12, title: 'Paloalto Unit 42', tags: ['Insights'], summary: 'Expert cybersecurity research, threat intelligence, and incident response reports', link: 'https://unit42.paloaltonetworks.com/category/threat-research/' },
+            { id: 13, title: 'CISO Series', tags: ['Insights','News', 'Podcasts'], summary: 'Featured podcasts, live events, and expert conversations for security professionals.', link: 'https://cisoseries.com/' }
         ];
 
         const communityData = [
-            { id: 1, title: 'SANS Internet Storm Center', level: 'Global', tags: ['Threat Intelligence', 'Analysis'], type: 'Community', description: 'Global cooperative cyber threat monitoring and alert community.', link: 'https://isc.sans.edu/' },
-            { id: 2, title: 'OWASP Foundation', level: 'Open Source', tags: ['AppSec', 'Frameworks'], type: 'Non-Profit', description: 'Open Worldwide Application Security Project driving secure software standards.', link: 'https://owasp.org/' },
-            { id: 3, title: 'DEF CON Groups', level: 'Local Chapters', tags: ['Hacking', 'Meetups'], type: 'Meetup', description: 'Community-driven local chapters meeting globally for hacking discussions and CTFs.', link: 'https://defcon.org/' },
-            { id: 4, title: 'Blue Team Village', level: 'Defense Focused', tags: ['SecOps', 'Mentorship'], type: 'Community', description: 'Community dedicated to education, defense strategies, and blue team professional growth.', link: 'https://blueteamvillage.org/' },
-            { id: 5, title: 'Nullcon Community', level: 'Global', tags: ['Research', 'Meetups'], type: 'Community', description: 'Security community dedicated to exchanging cutting-edge security research and hacking techniques.', link: 'https://nullcon.net/' },
-            { id: 6, title: 'BSides Chapters', level: 'Local Chapters', tags: ['Conferences', 'Networking'], type: 'Meetup', description: 'Community-driven framework for building security conferences around the globe.', link: 'http://www.securitybsides.org/' },
-            { id: 7, title: 'Women in Cybersecurity (WiCyS)', level: 'Global', tags: ['Diversity', 'Mentorship'], type: 'Non-Profit', description: 'Alliance dedicated to recruiting, retaining and advancing women in cybersecurity fields.', link: 'https://www.wicys.org/' },
-            { id: 8, title: 'ISC2 Chapter Network', level: 'Professional', tags: ['Governance', 'Networking'], type: 'Professional', description: 'Global network of cybersecurity professionals sharing local chapter insights and CPE events.', link: 'https://www.isc2.org/' },
-            { id: 9, title: 'ISACA Local Chapters', level: 'Professional', tags: ['Audit', 'Compliance'], type: 'Professional', description: 'Professional association focused on IT governance, risk, and security auditing practices.', link: 'https://www.isaca.org/' },
-            { id: 10, title: 'IRISS Community', level: 'Incident Response', tags: ['SecOps', 'Forensics'], type: 'Community', description: 'Incident Response Information Sharing Syndicate focused on collaborative threat analysis.', link: 'https://iriss.org.uk/' }
+            { id: 1, title: 'OWASP Foundation', label: 'Open Source', tags: ['AppSec', 'Framework'], type: 'Project', description: 'Open Worldwide Application Security Project driving secure software standards.', link: 'https://owasp.org/' },
+            { id: 2, title: 'DEF CON Groups', label: 'Local Chapters', tags: ['Conferences','Networking'], type: 'Meetup', description: 'Community-driven local chapters meeting globally for hacking discussions and CTFs.', link: 'https://defcon.org/' },
+            { id: 3, title: 'Blue Team Village', label: 'Blue Team', tags: ['CTFs'], type: 'Mentorship', description: 'Community dedicated to education, defense strategies, and blue team professional growth.', link: 'https://blueteamvillage.org/' },
+            { id: 4, title: 'Nullcon Community', label: 'Global', tags: ['CTFs'], type: 'Research', description: 'Security community dedicated to exchanging cutting-edge security research and hacking techniques.', link: 'https://nullcon.net/' },
+            { id: 5, title: 'BSides Chapters', label: 'Local Chapters', tags: ['Conferences', 'Networking'], type: 'Meetup', description: 'Community-driven framework for building security conferences around the globe.', link: 'http://www.securitybsides.org/' },
+            { id: 6, title: 'Women in Cybersecurity (WiCyS)', label: 'Global', tags: ['Networking'], type: 'Mentorship', description: 'Alliance dedicated to recruiting, retaining and advancing women in cybersecurity fields.', link: 'https://www.wicys.org/' },
+            { id: 7, title: 'Simply Cyber', label: 'Blue Team', tags: ['Networking','Podcasts','Webcasts'], type: 'Mentorship', description: 'Actionable cybersecurity intelligence, expert mentorship, and career-building resources', link: 'https://www.simplycyber.io/' },
+            { id: 8, title: 'Black Hills Information Security', label: 'Professional', tags: ['Conferences','Networking','Webcasts'], type: 'Mentorship', description: 'Hands-on cybersecurity training, threat intelligence, and expert insights', link: 'https://www.blackhillsinfosec.com/' },
+            { id: 9, title: 'MYDFIR', label: 'Blue Team', tags: ['CTFs','Networking'], type: 'Mentorship', description: 'Hands-on SOC training with real alerts, investigations, expert feedback', link: 'https://www.mydfir.com/' }
         ];
 
         const learningData = [
-            { id: 1, title: 'TryHackMe - SOC Level 1', level: 'Beginner', tags: ['SecOps', 'Platform'], type: 'Interactive', description: 'Hands-on rooms covering SIEM, EDR, and fundamental incident response concepts.', link: '#' },
-            { id: 2, title: 'Microsoft Learn - SC-200', level: 'Intermediate', tags: ['Microsoft', 'Certification'], type: 'Documentation', description: 'Official pathway for the Security Operations Analyst certification.', link: '#' },
-            { id: 3, title: 'LetsDefend - Blue Team Training', level: 'Intermediate', tags: ['SecOps', 'Platform'], type: 'Interactive', description: 'Simulated SOC environment where you investigate real-world alerts and malware.', link: '#' },
-            { id: 4, title: 'OWASP Top 10', level: 'All Levels', tags: ['AppSec', 'Framework'], type: 'Documentation', description: 'The definitive guide to the most critical web application security risks.', link: '#' },
-            { id: 5, title: 'SANS Cyber Aces', level: 'Beginner', tags: ['Fundamentals', 'Course'], type: 'Video/Text', description: 'Free online courses teaching the core concepts of cybersecurity and networking.', link: '#' },
-            { id: 6, title: 'HackTheBox Academy', level: 'Advanced', tags: ['OffSec', 'Platform'], type: 'Interactive', description: 'Deep dive into penetration testing and advanced exploitation techniques.', link: '#' },
-            { id: 7, title: 'Cybrary Free Tier', level: 'All Levels', tags: ['General', 'Video'], type: 'Video/Text', description: 'Extensive library of cybersecurity training videos, courses, and career paths.', link: '#' },
-            { id: 8, title: 'NIST Cybersecurity Framework', level: 'Intermediate', tags: ['Governance', 'Framework'], type: 'Documentation', description: 'Standards, guidelines, and best practices to manage cybersecurity risk.', link: '#' },
-            { id: 9, title: 'PortSwigger Web Security Academy', level: 'Advanced', tags: ['AppSec', 'Platform'], type: 'Interactive', description: 'Free online web security training by the creators of Burp Suite.', link: '#' },
-            { id: 10, title: 'Cisco Networking Academy', level: 'Beginner', tags: ['Fundamentals', 'Networking'], type: 'Course', description: 'Introductory courses on networking essentials, packet analysis, and security principles.', link: '#' }
+            { id: 1, title: 'TryHackMe', type: 'Beginner', tags: ['AppSec','CTFs','OffSec','SecOps'], kind: 'Interactive', description: 'Hands-on rooms covering Blue Team and Red Team concepts.', link: 'https://tryhackme.com/' },
+            { id: 2, title: 'Microsoft Learn', type: 'Intermediate', tags: ['Documentation','Engineering'], kind: 'Documentation', description: 'Official guides to get faimiliar with Microsoft toolsets.', link: 'https://learn.microsoft.com/en-us/' },
+            { id: 3, title: 'SANS Cyber Aces', type: 'Beginner', tags: ['Fundamentals'], kind: 'Video/Text', description: 'Free online courses teaching the core concepts of cybersecurity and networking.', link: 'https://www.sans.org/cyberaces' },
+            { id: 4, title: 'HackTheBox', type: 'Intermediate', tags: ['AppSec','CTFs','OffSec', 'SecOps'], kind: 'Interactive', description: 'Deep dive into penetration testing and advanced exploitation techniques.', link: 'https://www.hackthebox.com/' },
+            { id: 5, title: 'NIST Cybersecurity Framework', type: 'Intermediate', tags: ['GRC'], kind: 'Standards', description: 'Standards, guidelines, and best practices to manage cybersecurity risk.', link: 'https://www.nist.gov/cyberframework' },
+            { id: 6, title: 'PortSwigger Web Security Academy', type: 'Advanced', tags: ['AppSec'], kind: 'Interactive', description: 'Free online web security training by the creators of Burp Suite.', link: 'https://portswigger.net/web-security/learning-paths' },
+            { id: 7, title: 'Cisco Networking Academy', type: 'Beginner', tags: ['Fundamentals', 'SecOps'], kind: 'Video/Text', description: 'Introductory courses on networking essentials, packet analysis, and security principles.', link: 'https://www.netacad.com/catalogs/learn/cybersecurity' },
+            { id: 8, title: 'GRC Playground', type: 'Beginner', tags: ['GRC'], kind: 'Interactive', description: 'Real governance skills through mission-based learning in system analysis, policy writing, evidence review, and authorization decisions', link: 'https://www.grcplayground.com/' },
+            { id: 9, title: 'Forage', type: 'Beginner', tags: ['Internship'], kind: 'Simulation', description: 'Gain real-world experience through hundreds of free job simulations from top employers.', link: 'https://www.theforage.com/' },
+            { id: 9, title: 'Hack Smarter', type: 'Intermediate', tags: ['OffSec'], kind: 'Interactive', description: 'Curated learning paths featuring realistic hacking labs and hands-on courses.', link: 'https://www.hacksmarter.org/paths' },
+            { id: 10, title: 'KC7 Cyber', type: 'Intermediate', tags: ['SecOps'], kind: 'Interactive', description: 'Explore cybersecurity through real-world threat-hunting games', link: 'https://kc7cyber.com/' },
+            { id: 11, title: 'PwnCollege', type: 'Beginner', tags: ['Fundamentals','OffSec','SecOps'], kind: 'Interactive', description: 'Master cybersecurity through hands-on challenges in different security domains.', link: 'https://pwn.college/' },
+            { id: 12, title: 'RedTeamLeaders', type: 'Beginner', tags: ['OffSec','SecOps'], kind: 'Video/Text', description: 'Curated courses to understand the security domain.', link: 'https://courses.redteamleaders.com/' },
+            { id: 13, title: 'Antisyphon Training', type: 'Beginner', tags: ['OffSec','SecOps'], kind: 'Instructor-Led', description: 'Practical cybersecurity training through hands-on courses, real-world scenarios, and expert-led instruction.', link: 'https://www.antisyphontraining.com/' },
+            { id: 14, title: 'CyLab Security Academy', type: 'Beginner', tags: ['CTFs','SecOps'], kind: 'Interactive', description: 'Free cybersecurity education program featuring hands-on Capture the Flag challenges.', link: 'https://cylabacademy.org/' },
+            { id: 15, title: 'SkillBit', type: 'Intermediate', tags: ['CTFs', 'SecOps'], kind: 'Interactive', description: 'Hands-on cybersecurity learning with CTF challenges, interactive labs and guided modules.', link: 'https://skillbit.com/' }
         ];
 
         // Cached DOM Elements
@@ -332,7 +340,6 @@
                             <h4 class="font-bold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors flex items-center gap-2">
                                 ${item.title} <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                             </h4>
-                            <span class="text-xs font-medium text-brand-500">${item.source}</span>
                         </div>
                     </div>
                 </div>
@@ -346,7 +353,7 @@
         const renderCommunity = (item) => `
             <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="flex flex-col bg-white dark:bg-slate-800 p-6 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500/50 hover:shadow-md transition-all h-full group">
                 <div class="flex justify-between items-start mb-4">
-                    <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 border-brand-200 dark:border-brand-800">${item.level}</span>
+                    <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 border-brand-200 dark:border-brand-800">${item.label}</span>
                     <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center bg-gray-50 dark:bg-slate-900 px-2 py-1 rounded"><i class="fa-solid fa-users mr-1 text-brand-500"></i> ${item.type}</span>
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-brand-500 transition-colors flex items-center gap-2">
@@ -364,15 +371,14 @@
                 'Beginner': 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 border-green-200 dark:border-green-800',
                 'Intermediate': 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800',
                 'Advanced': 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400 border-purple-200 dark:border-purple-800',
-                'All Levels': 'bg-gray-100 text-gray-800 dark:bg-slate-700 dark:text-gray-300 border-gray-200 dark:border-slate-600'
             };
-            const levelClass = levelColors[item.level] || levelColors['All Levels'];
+            const levelClass = levelColors[item.type];
 
             return `
             <a href="${item.link}" class="flex flex-col bg-white dark:bg-slate-800 p-6 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500/50 hover:shadow-md transition-all h-full group">
                 <div class="flex justify-between items-start mb-4">
-                    <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border ${levelClass}">${item.level}</span>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center bg-gray-50 dark:bg-slate-900 px-2 py-1 rounded"><i class="fa-solid fa-tag mr-1 text-brand-500"></i> ${item.type}</span>
+                    <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border ${levelClass}">${item.type}</span>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center bg-gray-50 dark:bg-slate-900 px-2 py-1 rounded"><i class="fa-solid fa-tag mr-1 text-brand-500"></i> ${item.kind}</span>
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-brand-500 transition-colors">${item.title}</h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-1">${item.description}</p>
@@ -384,11 +390,18 @@
         };
 
         // Initialize Managers & Filters
-        function populateTags(dataArray, selectElementId) {
+        function populateData(dataArray, selectElementId) {
             const select = document.getElementById(selectElementId);
             if (!select) return;
             const tags = new Set();
-            dataArray.forEach(item => item.tags.forEach(t => tags.add(t)));
+            if(selectElementId.includes('tag'))
+            dataArray.forEach(item => {
+                item.tags.forEach(t => tags.add(t));
+            });
+            else if(selectElementId.includes('type'))
+            dataArray.forEach(item => {
+                tags.add(item.type);
+            });
             
             const fragment = document.createDocumentFragment();
             Array.from(tags).sort().forEach(tag => {
@@ -400,12 +413,43 @@
             select.appendChild(fragment);
         }
 
-        populateTags(articlesData, 'article-tag-select');
-        populateTags(communityData, 'community-tag-select');
-        populateTags(learningData, 'learning-tag-select');
+        function updateOptions(dataArray, selectElementId,filterValue){
+            const tagSelect = document.getElementById(selectElementId);
+            Array.from(tagSelect.options).forEach(option => option.disabled = false);
+            console.log(filterValue);
+            if(filterValue==='all') return;
+
+            let tags=new Set();
+            tags.add('all');
+            if(selectElementId.includes('tag')){
+                dataArray.forEach(item => {
+                    if(item.type===filterValue){
+                        item.tags.forEach(t => tags.add(t));
+                    }
+                });
+            }
+            if(selectElementId.includes('type')){
+                dataArray.forEach(item => {
+                    if(item.tags.includes(filterValue)){
+                        tags.add(item.type);
+                    }
+                });
+            }
+            Array.from(tagSelect.options).forEach(option => {
+                option.disabled = !tags.has(option.value);
+            });
+        }
+
+        populateData(articlesData, 'article-tag-select');
+        populateData(ctiData, 'cti-tag-select');
+        populateData(communityData, 'community-tag-select');
+        populateData(communityData,'community-type-select');
+        populateData(learningData, 'learning-tag-select');
+        populateData(learningData, 'learning-type-select');
+
 
         const articlesManager = new ListManager({ data: articlesData, containerId: 'articles-grid', paginationId: 'articles-pagination', renderItem: renderArticle, itemsPerPage: 12 });
-        const ctiManager = new ListManager({ data: ctiData, containerId: 'cti-grid', paginationId: 'cti-pagination', renderItem: renderCTI, itemsPerPage: 6, defaultSort: 'newest' });
+        const ctiManager = new ListManager({ data: ctiData, containerId: 'cti-grid', paginationId: 'cti-pagination', renderItem: renderCTI, itemsPerPage: 6, defaultSort: 'az' });
         const communityManager = new ListManager({ data: communityData, containerId: 'community-grid', paginationId: 'community-pagination', renderItem: renderCommunity, itemsPerPage: 6, defaultSort: 'az' });
         const learningManager = new ListManager({ data: learningData, containerId: 'learning-grid', paginationId: 'learning-pagination', renderItem: renderLearning, itemsPerPage: 6, defaultSort: 'az' });
 
@@ -442,12 +486,25 @@
             if(el) el.addEventListener('change', (e) => articlesManager.setFilters(undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined));
         });
 
-        ['community-tag-select', 'community-sort'].forEach(id => {
+        ['cti-tag-select', 'cti-sort'].forEach(id => {
             const el = document.getElementById(id);
-            if(el) el.addEventListener('change', (e) => communityManager.setFilters(undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined));
+            if(el) el.addEventListener('change', (e) => ctiManager.setFilters(undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined));
         });
 
-        ['learning-tag-select', 'learning-sort'].forEach(id => {
+        ['community-tag-select','community-type-select', 'community-sort'].forEach(id => {
             const el = document.getElementById(id);
-            if(el) el.addEventListener('change', (e) => learningManager.setFilters(undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined));
+            if(el) el.addEventListener('change', (e) => {
+                communityManager.setFilters(id.includes('type') ? e.target.value : undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined);
+                if (id.includes('type')) updateOptions(communityData,'community-tag-select',e.target.value)
+                if (id.includes('tag')) updateOptions(communityData,'community-type-select',e.target.value)
+            });
+        });
+
+        ['learning-tag-select','learning-type-select', 'learning-sort'].forEach(id => {
+            const el = document.getElementById(id);
+            if(el) el.addEventListener('change', (e) => {
+                learningManager.setFilters(id.includes('type') ? e.target.value : undefined, id.includes('tag') ? e.target.value : undefined, id.includes('sort') ? e.target.value : undefined);
+                if (id.includes('type')) updateOptions(learningData,'learning-tag-select',e.target.value)
+                if (id.includes('tag')) updateOptions(learningData,'learning-type-select',e.target.value)
+        });
         });

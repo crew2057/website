@@ -45,7 +45,73 @@
         </div>
     </nav>
         <main id="page-resources" class="page-section active pt-32 pb-20 min-h-screen transition-colors">
-        <h1 style="text-align:center">Coming Soon...</h1>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 reveal active">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Cybersecurity Resources</h2>
+                <div class="w-16 h-1 bg-brand-500 rounded mb-8"></div>
+                <p class="text-gray-600 dark:text-gray-400 max-w-3xl leading-relaxed">A curated collection of trusted external threat intelligence feeds, security communities, and free learning platforms to help you stay ahead.</p>
+            </div>
+            <div class="mb-20">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4 reveal active">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white flex items-center gap-3">
+                        <i class="fa-solid fa-satellite-dish text-brand-500"></i> Cyber Threat Intelligence Feeds
+                    </h3>
+                    <div class="flex gap-2 w-full md:w-auto">
+                        <select id="cti-tag-select" class="flex-1 md:w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="all">All Categories</option>
+                        </select>
+                        <select id="cti-sort" class="w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="cti-grid"></div>
+                <div id="cti-pagination" class="flex justify-center mt-10 gap-2 reveal active"></div>
+            </div>
+            <div class="mb-20">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4 reveal active">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white flex items-center gap-3">
+                        <i class="fa-solid fa-users-viewfinder text-brand-500"></i> Trusted Communities
+                    </h3>
+                    <div class="flex gap-2 w-full md:w-auto">
+                        <select id="community-type-select" class="flex-1 md:w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="all">All Types</option>
+                        </select>
+                        <select id="community-tag-select" class="flex-1 md:w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="all">All Categories</option>
+                        </select>
+                        <select id="community-sort" class="w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="community-grid"></div>
+                <div id="community-pagination" class="flex justify-center mt-10 gap-2 reveal active"></div>
+            </div>
+            <div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4 reveal active">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white flex items-center gap-3">
+                        <i class="fa-solid fa-book-open-reader text-brand-500"></i> Free Learning Resources
+                    </h3>
+                    <div class="flex gap-2 w-full md:w-auto">
+                        <select id="learning-type-select" class="flex-1 md:w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="all">All Levels</option>
+                        </select>
+                        <select id="learning-tag-select" class="flex-1 md:w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="all">All Categories</option>
+                        </select>
+                        <select id="learning-sort" class="w-auto px-4 py-2 rounded-md text-sm font-medium bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="learning-grid"></div>
+                <div id="learning-pagination" class="flex justify-center mt-10 gap-2 reveal active"></div>
+            </div>
+        </div>
     </main>
           <footer class="bg-gray-100 dark:bg-slate-950 py-8 border-t border-gray-200 dark:border-slate-800 transition-colors">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">

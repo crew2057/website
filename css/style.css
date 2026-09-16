@@ -8,6 +8,26 @@ select{
     min-height:32px;
     height:100%;
 }
+#article-single-content a{
+ font-size: bold;
+ text-decoration: underline;
+}
+#article-single-content code{
+ display: block;
+ text-align: left;
+}
+
+@media (min-width: 64rem) {
+    #toc-icon {
+        display: none;
+    }
+}
+
+@media(max-width:64rem){
+    #articles-single-body.remove-last-child > div:last-child{
+        display: none;
+    }
+}
 
 @media(max-width:40rem){
 #modal-panel,#cert-track>div{

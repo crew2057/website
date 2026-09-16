@@ -19,8 +19,8 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8" id="desktop-nav">
                         <a href="/" data-target="page-home" class="nav-link text-brand-500 dark:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-bold cursor-pointer">Home</a>
-                        <a href="./pages/articles.html" data-target="page-articles" class="nav-link hover:text-brand-500 dark:hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Articles</a>
-                        <a href="./pages/resources.html" data-target="page-resources" class="nav-link hover:text-brand-500 dark:hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Resources</a>
+                        <a href="./articles/" data-target="page-articles" class="nav-link hover:text-brand-500 dark:hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Articles</a>
+                        <a href="./resources/" data-target="page-resources" class="nav-link hover:text-brand-500 dark:hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Resources</a>
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
@@ -39,8 +39,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="mobile-nav">
                 <a href="/" data-target="page-home" class="nav-link block px-3 py-2 rounded-md text-base font-bold text-brand-500 bg-brand-50 dark:bg-slate-800 cursor-pointer">Home</a>
-                <a href="./pages/articles.html" data-target="page-articles" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer">Articles</a>
-                <a href="./pages/resources.html" data-target="page-resources" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer">Resources</a>
+                <a href="./articles/" data-target="page-articles" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer">Articles</a>
+                <a href="./resources/" data-target="page-resources" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer">Resources</a>
             </div>
         </div>
     </nav>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="home-projects-grid"></div>
                 <div class="text-center mt-12 reveal">
-                    <a href="./pages/articles.html" data-target="page-articles" class="nav-link inline-flex items-center gap-2 bg-brand-900 hover:bg-brand-800 text-white dark:bg-brand-600 dark:hover:bg-brand-500 px-8 py-3 rounded-md font-medium transition-colors shadow-md">
+                    <a href="./articles/" data-target="page-articles" class="nav-link inline-flex items-center gap-2 bg-brand-900 hover:bg-brand-800 text-white dark:bg-brand-600 dark:hover:bg-brand-500 px-8 py-3 rounded-md font-medium transition-colors shadow-md">
                         View More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -351,6 +351,10 @@
             </div>
         </div>
     </footer>
+            <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-20 right-6 w-12 h-12 bg-brand-500 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 translate-y-4 invisible transition-all duration-300 z-50 hover:bg-brand-600 hover:shadow-xl focus:outline-none" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
         <!-- Certification Modal -->
     <div id="cert-modal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300" aria-labelledby="modal-title" role="dialog" aria-modal="true">

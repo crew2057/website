@@ -450,20 +450,20 @@
         const communityManager = new ListManager({ data: communityData, containerId: 'community-grid', paginationId: 'community-pagination', renderItem: renderCommunity, itemsPerPage: 6, defaultSort: 'az' });
         const learningManager = new ListManager({ data: learningData, containerId: 'learning-grid', paginationId: 'learning-pagination', renderItem: renderLearning, itemsPerPage: 6, defaultSort: 'az' });
 
-        const homeProjectsGrid = document.getElementById('home-projects-grid');
-        if (homeProjectsGrid) {
-            homeProjectsGrid.innerHTML = articlesData.slice(0, 4).map((item, index) => {
-                const temp = document.createElement('div');
-                temp.innerHTML = renderArticle(item).trim();
-                const node = temp.firstChild;
-                if (node) {
-                    node.classList.add('reveal', 'active');
-                    node.style.animationDelay = `${index * 50}ms`;
-                    return node.outerHTML;
-                }
-                return '';
-            }).join('');
-        }
+        // const homeProjectsGrid = document.getElementById('home-projects-grid');
+        // if (homeProjectsGrid) {
+        //     homeProjectsGrid.innerHTML = articlesData.slice(0, 4).map((item, index) => {
+        //         const temp = document.createElement('div');
+        //         temp.innerHTML = renderArticle(item).trim();
+        //         const node = temp.firstChild;
+        //         if (node) {
+        //             node.classList.add('reveal', 'active');
+        //             node.style.animationDelay = `${index * 50}ms`;
+        //             return node.outerHTML;
+        //         }
+        //         return '';
+        //     }).join('');
+        // }
 
         // Event Listeners for Filters
         document.querySelectorAll('#article-type-filters .filter-btn').forEach(btn => {
@@ -662,6 +662,15 @@ if (articleElement) {
                 return '';
             }).join('');
     }
+}
+
+const homeProjectGrid=document.getElementById("home-projects-grid");
+if(homeProjectGrid){
+    let id=[2,3,1];
+    id.forEach(targetId =>{
+    const project = articlesData.find(p => p.id === targetId);
+    homeProjectGrid.innerHTML+=renderArticle(project);
+    })
 }
 
 //generate article URL based on title

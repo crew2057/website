@@ -39,7 +39,7 @@ select{
 }
 
 }
-
+/* 
 @media (min-width: 768px){
 
 .md\:grid-cols-3{
@@ -54,4 +54,4 @@ select{
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-}
+} */

@@ -470,9 +470,9 @@
             btn.addEventListener('click', (e) => {
                 document.querySelectorAll('#article-type-filters .filter-btn').forEach(b => {
                     b.classList.remove('bg-brand-500', 'text-white');
-                    b.classList.add('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300');
+                    b.classList.add('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300','hover:bg-gray-200','dark:hover:bg-slate-600');
                 });
-                e.target.classList.remove('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300');
+                e.target.classList.remove('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300','hover:bg-gray-200','dark:hover:bg-slate-600');
                 e.target.classList.add('bg-brand-500', 'text-white');
                 articlesManager.setFilters(e.target.dataset.filter, undefined, undefined);
             });

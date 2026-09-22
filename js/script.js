@@ -36,7 +36,8 @@
             { id: 10, title: 'Ultimate IT Security',  tags: ['Advisory'], summary: 'Get informed about updates on Windows CVEs', link: 'https://www.ultimatewindowssecurity.com/' },
             { id: 11, title: 'RansomwareLive', tags: ['Ransomware'], summary: 'Real-time ransomware intelligence tracking groups, victims, and emerging threats worldwide.', link: 'https://www.ransomware.live/' },
             { id: 12, title: 'Paloalto Unit 42', tags: ['Insights'], summary: 'Expert cybersecurity research, threat intelligence, and incident response reports', link: 'https://unit42.paloaltonetworks.com/category/threat-research/' },
-            { id: 13, title: 'CISO Series', tags: ['Insights','News', 'Podcasts'], summary: 'Featured podcasts, live events, and expert conversations for security professionals.', link: 'https://cisoseries.com/' }
+            { id: 13, title: 'CISO Series', tags: ['Insights','News', 'Podcasts'], summary: 'Featured podcasts, live events, and expert conversations for security professionals.', link: 'https://cisoseries.com/' },
+            { id: 14, title: 'Huntress', tags: ['Insights','Reports'], summary: 'Threat intelligence through continuous threat hunting, adversary research, and real-world attack analysis on emerging threats.', link: 'https://www.huntress.com/' }
         ];
 
         const communityData = [
@@ -449,21 +450,6 @@
         const ctiManager = new ListManager({ data: ctiData, containerId: 'cti-grid', paginationId: 'cti-pagination', renderItem: renderCTI, itemsPerPage: 6, defaultSort: 'az' });
         const communityManager = new ListManager({ data: communityData, containerId: 'community-grid', paginationId: 'community-pagination', renderItem: renderCommunity, itemsPerPage: 6, defaultSort: 'az' });
         const learningManager = new ListManager({ data: learningData, containerId: 'learning-grid', paginationId: 'learning-pagination', renderItem: renderLearning, itemsPerPage: 6, defaultSort: 'az' });
-
-        // const homeProjectsGrid = document.getElementById('home-projects-grid');
-        // if (homeProjectsGrid) {
-        //     homeProjectsGrid.innerHTML = articlesData.slice(0, 4).map((item, index) => {
-        //         const temp = document.createElement('div');
-        //         temp.innerHTML = renderArticle(item).trim();
-        //         const node = temp.firstChild;
-        //         if (node) {
-        //             node.classList.add('reveal', 'active');
-        //             node.style.animationDelay = `${index * 50}ms`;
-        //             return node.outerHTML;
-        //         }
-        //         return '';
-        //     }).join('');
-        // }
 
         // Event Listeners for Filters
         document.querySelectorAll('#article-type-filters .filter-btn').forEach(btn => {
